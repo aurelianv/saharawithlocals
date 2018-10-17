@@ -3240,6 +3240,7 @@ span.reply i {margin-right: 3px}
 .banner-area.contact-banner, .banner-area.about-banner {
     background: rgba(0, 0, 0, 0) url("/img/sahara/hp.jpeg") no-repeat scroll center top /cover;
     padding-top: 30%;
+    min-height: 70%;
 }
 .contact-banner .breadcrumb, .about-banner .breadcrumb {margin: 46px auto 0}
 .contact-information-area .section-title {margin-bottom: 64px}
@@ -3669,6 +3670,12 @@ textarea.yourmessage {
   font-weight: 300;
   line-height: 26px;
   position: relative;
+}
+
+@media (max-width: 900px) {
+  .logo-title h1 {
+    margin-left: 0px;
+  }
 }
 
 .home-p-3 {
