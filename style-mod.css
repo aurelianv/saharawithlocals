@@ -148,7 +148,7 @@ body {
     margin-top: 100px;
     margin-bottom: 100px
 }
-.section-title {
+.section-title-transparent {
   margin-bottom: 10%;
   background: rgba(0, 0, 0, 0.35);
 }
@@ -769,7 +769,8 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
     background: transparent;
     height: auto;
     left: 0;
-    padding: 5px 12px;
+    /*padding: 5px 12px;*/
+    padding: 0px 20px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -1196,6 +1197,7 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
 .member-text h4 a {font-size: 20px}
 .member-text h4 a span {font-weight: 300}
 .member-text h4 a {font-weight: 600}
+.member-text h4 a:hover {color: inherit!important;}
 .single-member:hover .member-text p {
     font-size: 14px;
     line-height: 26px;
@@ -3688,4 +3690,8 @@ textarea.yourmessage {
 .footer-contact {
   margin-bottom: 50px;
   color: white;
+}
+
+.row-tours {
+  margin-bottom: 2.5em;
 }
