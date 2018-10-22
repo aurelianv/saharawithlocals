@@ -438,7 +438,7 @@ ul.header-r-cart li:hover .mini-cart-content {
 /*----------------------------------------*/
 /*  2.2 Header Logo Menu
 /*----------------------------------------*/
-.logo-menu-bg {background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0}
+.logo-menu-bg {background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0; max-height: 112px;}
 .logo, .mainmenu {
     margin-left: 20px;
     position: relative;
@@ -3694,4 +3694,9 @@ textarea.yourmessage {
 
 .row-tours {
   margin-bottom: 2.5em;
+}
+
+.logo-title > img {
+  padding: 20px;
+  max-height: 112px;
 }
