@@ -1841,7 +1841,7 @@ header.header-three {top: 10px}
     background: rgba(0, 0, 0, 0) url("img/banner/transparent-bottom.png") no-repeat scroll center top / cover ;
     bottom: 0;
     content: "";
-    height: 84px;
+    height: 50px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -3241,9 +3241,9 @@ span.reply i {margin-right: 3px}
 /*  26. Contact Page
 /*----------------------------------------*/
 .banner-area.contact-banner, .banner-area.about-banner {
-    background: rgba(0, 0, 0, 0) url("/img/sahara/hp.jpeg") no-repeat scroll center top /cover;
+    background: rgba(0, 0, 0, 0) url("/img/sahara/hp.jpg") no-repeat scroll center top /cover;
     padding-top: 30%;
-    min-height: 70%;
+    min-height: 88%;
 }
 .contact-banner .breadcrumb, .about-banner .breadcrumb {margin: 46px auto 0}
 .contact-information-area .section-title {margin-bottom: 64px}
@@ -3417,7 +3417,7 @@ textarea.yourmessage {
 /*----------------------------------------*/
 /*  28.1 About Information Area
 /*----------------------------------------*/
-.about-information-area {padding-bottom: 74px;}
+.about-information-area {padding-bottom: 25px;}
 .about-text-container p {margin-bottom: 0}
 .about-text-container {padding: 0 12px}
 .about-info:hover .about-text-container {padding: 0}
@@ -3700,4 +3700,37 @@ textarea.yourmessage {
 .logo-title > img {
   padding: 20px;
   max-height: 112px;
+}
+
+/*----------------------------------------*/
+/*  3. Slider Area
+/*----------------------------------------*/
+.nivo-directionNav {display: none;}
+.slider-area {
+  max-height: 88%;
+  overflow: hidden;
+}
+@media (min-width: 900px) {
+  .slider-area::after {
+    background: rgba(0, 0, 0, 0) url("img/banner/transparent-bottom.png") no-repeat scroll center top / cover ;
+    bottom: 12%;
+    content: "";
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-area .text-content, .slider-area.slider-three .text-content {
+    margin-top: 50%!important;
+  }
+  .container {
+    width: 100%!important;
+  }
+  .about-information-area {
+    padding-top: 25px;
+  }
 }
