@@ -132,7 +132,8 @@ ul{
 ::-moz-placeholder {opacity: 1 !important}
 :-ms-input-placeholder {opacity: 1 !important}
 body {
-    color: #000;
+    /*color: #000;*/
+    color: #4c431f;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -140,7 +141,7 @@ body {
 }
 .container { width: 1200px}
 .section-padding {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     padding-bottom: 100px
 }
 .section-bottom-padding {padding-bottom: 100px}
@@ -161,6 +162,7 @@ body {
     margin-bottom: 18px;
     padding-bottom: 38px;
     position: relative;
+    color: #bfa746;
     /*text-transform: uppercase;*/
 }
 .section-title h1 span {font-weight: 700}
@@ -452,7 +454,11 @@ ul.header-r-cart li:hover .mini-cart-content {
 /*----------------------------------------*/
 /*  2.2.2 Mainmenu
 /*----------------------------------------*/
-.mainmenu {margin-left: 28px}
+.mainmenu {
+  /*margin-left: 28px*/
+  text-align: right;
+  margin-right: 50px;
+}
 .mainmenu ul#nav {position: relative}
 .mainmenu ul#nav li {display: inline-block; margin: 0 12px}
 .mainmenu ul#nav li:first-child {margin-left: 0}
@@ -2068,13 +2074,13 @@ header.header-three {top: 10px}
 }
 .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {background: transparent}
 .pagination li.current {
-    background: #ffb400 none repeat scroll 0 0;
-    border-color: #ffb400;
+    background: #f6d85f none repeat scroll 0 0;
+    border-color: #f6d85f;
     margin: 0 5px;
     transform: skewX(-4.8deg);
 }
 .pagination li.current a, .pagination li.current:hover a {color: #fff}
-.pagination li:hover a {color: #ffb400; background: transparent}
+.pagination li:hover a {color: #f6d85f; background: transparent}
 .pagination li a i {font-size: 16px}
 /*----------------------------------------*/
 /*  18. Shop Grid With Sidebar Page
@@ -2182,7 +2188,7 @@ header.header-three {top: 10px}
     height: 10px;
 }
 .ui-slider-range.ui-widget-header.ui-corner-all {
-    background: #ffb400 none repeat scroll 0 0 !important;
+    background: #f6d85f none repeat scroll 0 0 !important;
     border: medium none !important;
     height: 10px;
     margin-top: 0;
@@ -2600,16 +2606,19 @@ header.header-three {top: 10px}
 /*  20.1 Trip Information Area
 /*----------------------------------------*/
 .trip-information {
-    background: #edecec url("img/banner/26.png") no-repeat scroll right top / 58% 100%;
-    padding-bottom: 96px;
+    /*background: #edecec url("img/banner/26.png") no-repeat scroll right top / 58% 100%;
+    padding-bottom: 96px;*/
     padding-top: 80px;
 }
 .adventures-grid form#banner-searchbox.details-form {margin-bottom: 0}
 .trip-info-left-text .section-title {margin-bottom: 46px}
+.p-margin-top {
+  margin-top: 40px!important;
+}
 .trip-info-left-text p, .about-adventures p {
     line-height: 30px;
     margin-top: 12px;
-    text-align: left;
+    text-align: justify;
 }
 .details-social-link a {border-color: #606060; margin-right: 26px;}
 .details-social-link a:hover {border-color: #000; color: #000;}
@@ -2626,14 +2635,13 @@ header.header-three {top: 10px}
 }
 .details-info {margin-bottom: 51px; overflow: hidden}
 .trip-booking-info h2 {
-    color: #ffffff;
+    color: #bfa746;
     font-size: 20px;
     margin-bottom: 24px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400
 }
-.trip-booking-info {padding-top: 127px}
 .single-trip-content, .trip-level-content {
     float: left;
     text-align: center;
@@ -2649,15 +2657,16 @@ header.header-three {top: 10px}
 }
 .trip-level-content > h4 {margin-top: 8px}
 .row.divider {
-    border-bottom: 1px solid #2e2f36;
-    border-top: 1px solid #16171a;
+    border-bottom: 1px solid #bfa746;
     margin-bottom: 25px;
     margin-top: 15px;
     overflow: hidden;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 .trip-rating i {color: #85868e}
 .trip-text-container p {color: #8d8d8d; padding-top: 6px}
-.trip-text-container p span {color: #ffb400}
+.trip-text-container p span {color: #f6d85f}
 .trip-text-container h3 {
     color: #8d8d8d;
     font-family: "Open Sans",sans-serif;
@@ -2665,7 +2674,7 @@ header.header-three {top: 10px}
     line-height: 22px;
 }
 .trip-text-container > h1 {
-    color: #ffb400;
+    color: #f6d85f;
     font-family: "Open Sans",sans-serif;
     font-size: 35px;
     font-weight: 700;
@@ -2674,17 +2683,18 @@ header.header-three {top: 10px}
 }
 .trip-text-container.budget > p {font-size: 15px; padding-top: 0}
 button#booking-button {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #bfa746 none repeat scroll 0 0;
     border: 0 none;
     color: #ffffff;
     font-size: 25px;
     font-weight: 300;
     line-height: 58px;
     margin-top: 36px;
+    margin-bottom: 20px;
     padding: 0 70px;
     text-transform: uppercase;
 }
-button#booking-button:hover, .booking-button-two:hover  {background: rgba(255, 174, 0, 0.8) none repeat scroll 0 0}
+button#booking-button:hover, .booking-button-two:hover  {background: #bfa746ab none repeat scroll 0 0}
 /*----------------------------------------*/
 /*  20.2 Trip Inclution
 /*----------------------------------------*/
@@ -2734,11 +2744,11 @@ button#booking-button:hover, .booking-button-two:hover  {background: rgba(255, 1
 }
 .include-text > p {margin-bottom: 0}
 .include-item {overflow: hidden}
-.include-item:hover .include-text h4, .contact-info:hover .contact-text h4 {color: #ffb400}
+.include-item:hover .include-text h4, .contact-info:hover .contact-text h4 {color: #bfa746}
 .include-item:hover .include-icon {color: #ffffff}
 .include-item:hover .include-icon, .contact-info:hover .contact-image {
-    background: #ffb400 none repeat scroll 0 0;
-    border-color: #ffb400;
+    background: #bfa746 none repeat scroll 0 0;
+    border-color: #bfa746;
 }
 .include-item:hover .include-icon::before, .include-item:hover .include-icon::after, .contact-info:hover .contact-image::after, .contact-info:hover .contact-image::before {
     display: none;
@@ -2784,7 +2794,7 @@ button#booking-button:hover, .booking-button-two:hover  {background: rgba(255, 1
 .trip-pricing-area table tbody tr:last-child td {padding-bottom: 23px}
 .trip-pricing-area table tbody tr:first-child td:last-child {padding-top: 28px}
 .booking-button-two {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     border: 0 none;
     color: #ffffff;
     font-size: 18px;
@@ -2817,8 +2827,7 @@ header.fixed .header-logo-menu {
     top: 49px;
 }
 .details-two .trip-info-left-text {padding-top: 112px}
-.details-two .trip-booking-info {padding-top: 171px}
-.trip-information.details-two {background: #edecec url("img/banner/24.png") no-repeat scroll right top / 57% 100%}
+/*.trip-information.details-two {background: #edecec url("img/banner/24.png") no-repeat scroll right top / 57% 100%}*/
 /*----------------------------------------*/
 /*  21.1 Trip Gallery
 /*----------------------------------------*/
@@ -2835,7 +2844,7 @@ header.fixed .header-logo-menu {
     font-weight: 600;
     margin-bottom: 7px;
 }
-.gallery-text h2 a {color: #ffb400}
+.gallery-text h2 a {color: #f6d85f}
 .gallery-text h2 a:hover {color: #fff}
 .gallery-text h4 {
     color: #ffffff;
@@ -2849,7 +2858,7 @@ header.fixed .header-logo-menu {
     font-size: 18px;
     padding: 0 4px;
 }
-.gallery-link a:hover {color: #ffb400}
+.gallery-link a:hover {color: #f6d85f}
 .gallery-text {
     bottom: 0;
     content: "";
@@ -2882,7 +2891,7 @@ header.fixed .header-logo-menu {
 /*  22.1 Blog Page Sidebar
 /*----------------------------------------*/
 .blog-post-area .widget-categories a {padding-left: 0}
-.blog-post-area .widget-categories a:hover {color: #ffb400}
+.blog-post-area .widget-categories a:hover {color: #f6d85f}
 #text-search {
     background: #ffffff none repeat scroll 0 0;
     border: 1px solid #bcbcbc;
@@ -2901,7 +2910,7 @@ header.fixed .header-logo-menu {
     width: 82%;
 }
 #text-search .submit {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     border: 0 none;
     color: #ffffff;
     font-size: 25px;
@@ -2913,7 +2922,7 @@ header.fixed .header-logo-menu {
     transition: all 0.3s ease-in 0s;
     width: 50px;
 }
-#text-search .submit:hover {color: #ffb400; background: transparent}
+#text-search .submit:hover {color: #f6d85f; background: transparent}
 .blog-post-area .widget-categories a {line-height: 16px;margin-bottom: 14px}
 .posts-text a {font-family: "Open Sans",sans-serif; font-size: 14px;}
 .post-img {float: left; margin-right: 9px;}
@@ -3042,11 +3051,11 @@ header.fixed .header-logo-menu {
     padding-right: 25px;
     position: relative;
 }
-.blog-post-two .single-blog-post:hover .blog-two-text-container {border-bottom: 4px solid #ffb400}
+.blog-post-two .single-blog-post:hover .blog-two-text-container {border-bottom: 4px solid #f6d85f}
 .blog-post-two .single-blog-post-text {margin-top: 32px; padding-top: 31px;}
 .blog-post-two .blog-button-links {margin-top: 34px}
 .button-dark {background: #212227 none repeat scroll 0 0 !important}
-.button-dark:hover {background: #ffb400 none repeat scroll 0 0 !important; color: #ffffff;}
+.button-dark:hover {background: #f6d85f none repeat scroll 0 0 !important; color: #ffffff;}
 .blog-post-two .single-blog-post:hover .blog-image {border-color: #191919}
 .blog-post-two .date-time {
     margin-top: -42.5px;
@@ -3226,7 +3235,7 @@ span.reply i {margin-right: 3px}
 }
 .error-area #text-search {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
 .error-text-container > a {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     color: #ffffff;
     display: inline-block;
     font-size: 20px;
@@ -3403,9 +3412,9 @@ textarea.yourmessage {
     display: inline-block;
     line-height: 12px;
 }
-.sign-in-settings > a {color: #ffb400; float: right; line-height: 15px}
+.sign-in-settings > a {color: #f6d85f; float: right; line-height: 15px}
 .sign-in-settings > a:hover {color: #333333}
-.sign-in-form .submit-button {background: #ffb400 none repeat scroll 0 0; margin-top: 36px}
+.sign-in-form .submit-button {background: #f6d85f none repeat scroll 0 0; margin-top: 36px}
 .sign-in-form .submit-button:hover {background: #212227 none repeat scroll 0 0}
 .sign-in-area .section-title p {font-size: 14px; line-height: 25px;}
 .section-title.title-right {margin-bottom: 37px}
@@ -3423,7 +3432,7 @@ textarea.yourmessage {
 .about-info:hover .about-text-container {padding: 0}
 .about-info {margin-top: 26px; min-height: 284px; position: relative}
 .about-info .about-bg {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     bottom: 0;
     content: "";
     display: none;
@@ -3476,7 +3485,7 @@ textarea.yourmessage {
 }
 .about-info:hover .about-icon:after {display: block}
 .about-info::before {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     content: "";
     height: 52px;
     left: 0;
@@ -3488,7 +3497,7 @@ textarea.yourmessage {
 }
 .about-info:hover:before {display: block}
 .about-info::after {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     content: "";
     height: 52px;
     right: 0;
@@ -3507,7 +3516,7 @@ textarea.yourmessage {
 .about-adventures .section-title {margin-bottom: 0}
 .about-adventures .details-social-link > a {border-color: #858585}
 .about-adventures .details-social-link > a:hover {border-color: #212227; color: #212227}
-.about-adventures .button-one:hover {background: #FFB400}
+.about-adventures .button-one:hover {background: #f6d85f}
 /*----------------------------------------*/
 /*  28.3 About Service Area
 /*----------------------------------------*/
@@ -3582,18 +3591,18 @@ textarea.yourmessage {
     right: 33px;
 }
 .single-skill-icon::before {
-    border-color: #ffb400 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffb400;
+    border-color: #f6d85f rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f6d85f;
     border-width: 6px 56.5px;
     bottom: -11px;
 }
 .single-skill-icon::after {
-    border-color: #ffb400 #ffb400 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #f6d85f #f6d85f rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     border-width: 6px 51.5px;
     bottom: -11px;
     right: 1px;
 }
 .skill-bg {
-    background: #ffb400 none repeat scroll 0 0;
+    background: #f6d85f none repeat scroll 0 0;
     bottom: 0;
     height: 82%;
     left: 0;
@@ -3635,7 +3644,7 @@ textarea.yourmessage {
     padding-top: 40px;
 }
 .advertise-area a {
-    color: #ffb400;
+    color: #f6d85f;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -3743,6 +3752,18 @@ textarea.yourmessage {
   .about-text-container {
     padding: 0px;
   }
+  .trip-information.details-two {
+    background: #FFF!important;
+  }
+  .container {
+    width: 100%!important;
+  }
+  .details-two .trip-info-left-text {
+    padding-top: 0px!important;
+  }
+  button#booking-button {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -3754,4 +3775,20 @@ textarea.yourmessage {
   .row {
     margin: 0!important;
   }
+}
+
+.text-b {
+  color: #c0a83d;
+  font-size: 16px;
+}
+
+@media (min-width: 1920px) {
+  .trip-booking-info {
+    right: 0px!important;
+  }
+}
+
+#booking-button > a, #booking-button > a:hover, #booking-button > a:focus, #booking-button > a:active, #booking-button > a:visited {
+    color: white!important;
+    text-decoration: none!important;
 }
