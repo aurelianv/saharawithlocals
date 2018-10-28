@@ -3716,7 +3716,7 @@ textarea.yourmessage {
 /*----------------------------------------*/
 .nivo-directionNav {display: none;}
 .slider-area {
-  max-height: 88%;
+  height: 88%;
   overflow: hidden;
 }
 @media (min-width: 900px) {
