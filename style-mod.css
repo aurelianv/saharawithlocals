@@ -1260,7 +1260,7 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
     text-transform: uppercase;
 }
 .footer-widget-list li {
-    color: #cccccc;
+    color: #fff;
     display: block;
     line-height: 25px;
 }
@@ -1286,7 +1286,7 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
 .footer-widget-area li.icon.envelope:after {content: "\f0e0";}
 .footer-widget-area li.icon.phone:after {content: "\f095";}
 .footer-widget-list a {
-    color: #cccccc;
+    color: #fff;
     line-height: 30px;
     position: relative
 }
@@ -1322,8 +1322,8 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
 .footer-widget-list.twitter-news li a {color: #ffffff; line-height: 20px}
 .footer-widget-list.twitter-news li a:hover {color: #000}
 .footer-link a, .details-social-link a {
-    border: 1px solid #858585;
-    color: #858585;
+    border: 1px solid #fff;
+    color: #fff;
     display: inline-block;
     font-size: 30px;
     height: 47px;
