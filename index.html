@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="a8FXa9YvkxEAatVfj4mCBuUNtvLV7BaO4b65WcDxhV8" />
 
+        <meta property="og:image" content="https://www.saharawithlocals.com/img/sahara/SaharaWithLocals_fb.png" />
+
 		<!-- favicon
 		============================================ -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
@@ -87,6 +89,15 @@
 
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=2172282963034412&autoLogAppEvents=1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -409,6 +420,29 @@
             </div>
         </div>
         <!--End of Team Area-->
+
+        <!-- Testimonials -->
+        <div class="team-area">
+            <div class="container containerMobile">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <div class="title-border">
+                                <h1>Testimonials</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-tours">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+                      <div class="fb-post" data-href="https://www.facebook.com/Saharawithlocals/posts/324616054786456" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/Saharawithlocals/posts/324616054786456" class="fb-xfbml-parse-ignore"><p>Said is a great person and he knows his job very well.
+                        Get to wonderful places, live new experiences. Unforgettable.
+                        Thanks</p>Pubblicato da <a href="#" role="button">Daniel Arias</a> su&nbsp;<a href="https://www.facebook.com/Saharawithlocals/posts/324616054786456">Domenica 28 ottobre 2018</a></blockquote></div>
+                      </div>
+                    </div>
+              </div>
+        </div>
+
         <!--Footer Widget Area Start-->
         <div class="footer-widget-area">
             <div class="container">
@@ -425,7 +459,7 @@
                                 <ul>
                                     <li class="icon send">N 3 Rue Ennadi 45000, Ouarzazate Tassoumaate, Morocco</li>
                                     <li class="icon envelope"><a href="mailto:saharawithlocals@gmail.com" target="_blank">SaharaWithLocals@gmail.com</a></li>
-                                    <li class="icon phone">+ 212 684 373 405</li>
+                                    <li class="icon phone"><a href="tel:+212684373405">+ 212 684 373 405 (Said)</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -466,20 +500,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--End of Footer Widget Area-->
-        <!--Footer Area Start-->
-        <div class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+                <div class="footer-area row">
+                    <div class="col-sm-12 text-center">
                         <span>Copyright © 2018 <a href="javascript:void(0)">Sahara with Locals LLC</a>. All rights reserved.</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!--End of Footer Area-->
+        <!--End of Footer Widget Area-->
 
 
 		<!-- jquery
@@ -530,5 +558,21 @@
 		<!-- main JS
 		============================================ -->
         <script src="js/main.js"></script>
+
+        <!-- WhatsHelp.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    whatsapp: "+212684373405", // WhatsApp number
+                    call_to_action: "Message us", // Call to action
+                    position: "left", // Position may be 'right' or 'left'
+                };
+                var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+        <!-- /WhatsHelp.io widget -->
     </body>
 </html>

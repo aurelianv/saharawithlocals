@@ -1341,7 +1341,6 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
 /*  14. Footer Area
 /*----------------------------------------*/
 .footer-area {
-    background: #15161a none repeat scroll 0 0;
     color: #ffffff;
     padding: 24px 0;
 }
@@ -3716,10 +3715,13 @@ textarea.yourmessage {
 /*----------------------------------------*/
 .nivo-directionNav {display: none;}
 .slider-area {
-  height: 88%;
+  max-height: 88%;
   overflow: hidden;
 }
 @media (min-width: 900px) {
+  .slider-area {
+    height: 88%;
+  }
   .slider-area::after {
     background: rgba(0, 0, 0, 0) url("img/banner/transparent-bottom.png") no-repeat scroll center top / cover ;
     bottom: 12%;
