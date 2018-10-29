@@ -10,11 +10,17 @@ mv tour-Marrakech-Merzouga.html tour-Marrakech-Merzouga
 mv tour-Marrakech-Merzouga-3.html tour-Marrakech-Merzouga-3
 mv tour-Marrakech-Taroudante.html tour-Marrakech-Taroudante
 mv Grand-South-Tour.html Grand-South-Tour
+mv testimonials.html testimonials
+mv contact.html contact
 s3cmd -c ~/.s3cfg-sait sync ./tour-* s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./Grand-South-Tour s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
+s3cmd -c ~/.s3cfg-sait sync ./testimonials s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
+s3cmd -c ~/.s3cfg-sait sync ./contact s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.com/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./tour-* s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./Grand-South-Tour s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
+s3cmd -c ~/.s3cfg-sait sync ./testimonials s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
+s3cmd -c ~/.s3cfg-sait sync ./contact s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.co.uk/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 mv tour-Marrakech-Ouarzazate tour-Marrakech-Ouarzazate.html
 mv tour-Marrakech-Ait-Ben-Hadou tour-Marrakech-Ait-Ben-Hadou.html
@@ -28,6 +34,7 @@ mv tour-Marrakech-Merzouga tour-Marrakech-Merzouga.html
 mv tour-Marrakech-Merzouga-3 tour-Marrakech-Merzouga-3.html
 mv tour-Marrakech-Taroudante tour-Marrakech-Taroudante.html
 mv Grand-South-Tour Grand-South-Tour.html
-
+mv testimonials testimonials.html
+mv contact contact.html
 #s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.com/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding" --add-header "Content-Type: text/html"
 #s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.co.uk/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
