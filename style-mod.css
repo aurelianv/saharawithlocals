@@ -767,8 +767,14 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
     font-size: 20px;
     text-transform: uppercase;
 }
-.single-portfolio:hover .portfolio-text a:hover, .single-adventure:hover .adventure-text a:hover, .single-portfolio:hover .portfolio-text .portfolio-link a:hover, .single-adventure:hover .adventure-text .adventure-link a:hover, .single-member:hover .member-text a:hover, .single-member:hover .member-text .member-link a:hover, .best-sell-link > a:hover {
-    color: #000000;
+.single-portfolio:hover .portfolio-text a:hover, .single-adventure:hover .adventure-text a:hover,
+.single-portfolio:hover .portfolio-text .portfolio-link a:hover,
+.single-adventure:hover .adventure-text .adventure-link a:hover,
+.single-member:hover .member-text a:hover,
+.single-member:hover .member-text .member-link a:hover,
+.best-sell-link > a:hover,
+.single-member:hover .member-text a:hover h4 {
+    color: #fff;
 }
 .single-portfolio, .single-adventure, .single-member {overflow: hidden; position: relative}
 .portfolio-text, .adventure-text, .member-text {
@@ -795,7 +801,11 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
     width: 100%;
 }
 .portfolio-text > p, .member-text > p {display: none; font-size: 13px; margin-bottom: 8px;}
-.portfolio-text p, .adventure-text p, .portfolio-text h4 a, .adventure-text h4 a, .portfolio-text .portfolio-link a, .adventure-text .adventure-price-link, .member-text p, .member-text h4 a, .member-text .member-link a, .single-adventure:hover .adventure-price-link span, .single-adventure:hover .transparent-overlay span{
+.portfolio-text p, .adventure-text p, .portfolio-text h4 a,
+.adventure-text h4 a, .portfolio-text .portfolio-link a,
+.adventure-text .adventure-price-link,
+.member-text p, .member-text > h4,
+.member-text .member-link a, .single-adventure:hover .adventure-price-link span, .single-adventure:hover .transparent-overlay span{
     z-index: 9;
     position: relative
 }
@@ -804,7 +814,7 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
     display: inline-block;
     margin-right: 9px;
 }
-.single-portfolio:hover .portfolio-text p, .single-adventure:hover .adventure-text p, .single-member:hover .member-text p {
+.single-portfolio:hover .portfolio-text p, .single-adventure:hover .adventure-text p, .single-member:hover .member-text p, .single-member:hover .member-text h4 {
     display: block;
     margin-bottom: 5px;
 }
@@ -814,8 +824,17 @@ button#btn-search-category:hover, .newsletter-content button:hover, .button-one:
     top: -23px;
 }
 .single-portfolio:hover .portfolio-text h4 {margin-bottom: 13px}
-.single-portfolio:hover .portfolio-text p, .single-adventure:hover .adventure-text p, .single-portfolio:hover .portfolio-text h4 a, .single-adventure:hover .adventure-text h4 a, .single-portfolio:hover .portfolio-text .portfolio-link a, .single-adventure:hover .adventure-text .adventure-link a, .single-member:hover .member-text p, .single-member:hover .member-text h4 a, .single-member:hover .member-text .member-link a, .single-adventure:hover .adventure-price-link span, .single-adventure:hover .adventure-price-link span, .trip-time, .trip-level {
-    color: #fff
+.single-portfolio:hover .portfolio-text p, .single-adventure:hover .adventure-text p,
+.single-portfolio:hover .portfolio-text h4 a, .single-adventure:hover .adventure-text h4 a,
+.single-portfolio:hover .portfolio-text .portfolio-link a,
+.single-adventure:hover .adventure-text .adventure-link a,
+.single-member:hover .member-text p,
+.single-member:hover .member-text h4,
+.single-member:hover .member-text .member-link a,
+.single-adventure:hover .adventure-price-link span,
+.single-adventure:hover .adventure-price-link span,
+.trip-time, .trip-level {
+    color: white!important
 }
 .portfolio-area .col-md-3 .single-portfolio:first-child {margin-bottom: 30px}
 .portfolio-text.effect-bottom, .adventure-text.effect-bottom, .member-text.effect-bottom {
@@ -1995,6 +2014,7 @@ header.header-three {top: 10px}
     font-family: "Open Sans",sans-serif;
     font-size: 20px;
     font-weight: 600;
+    color: #fff;
 }
 .adventure-text h4 a span {font-size: 16px; font-weight: 300}
 .adventure-price-link .trip-price {
@@ -2647,7 +2667,7 @@ header.header-three {top: 10px}
     width: 33.33%;
 }
 .trip-booking-info h4 {
-    color: #85868e;
+    color: #85868;
     font-family: "Open Sans",sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -3776,6 +3796,9 @@ textarea.yourmessage {
   }
   .row {
     margin: 0!important;
+  }
+   div.team-image > a > img {
+    transform: translateY(-30%);
   }
 }
 
