@@ -483,9 +483,10 @@ ul.header-r-cart li:hover .mini-cart-content {
     text-align: left;
     transition: all 0.3s ease 0s;
     visibility: hidden;
-    width: 218px;
+    width: 320px;
     z-index: -9;
-    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    color: #fff!important;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     right: auto;
     top: 110%;
@@ -523,9 +524,9 @@ ul.header-r-cart li:hover .mini-cart-content {
     margin-top: 32px;
     width: 25%;
 }
-.mainmenu ul#nav li .megamenu span > a:hover, .mainmenu ul#nav li ul.sub-menu li a:hover {color: #000}
+.mainmenu ul#nav li .megamenu span > a:hover, .mainmenu ul#nav li ul.sub-menu li a:hover {color: #fff}
 .mainmenu ul#nav li .megamenu span > a, .mainmenu ul#nav li ul.sub-menu li a {
-    color: #4e4f54;
+    color: #fff!important;
     display: block;
     font-size: 14px;
     line-height: 21px;
@@ -539,10 +540,10 @@ ul.header-r-cart li:hover .mini-cart-content {
 .mainmenu ul#nav li ul.sub-menu li a {padding: 9px 0 !important; margin-left: 15px}
 .mega-title {
     color: #000 !important;
-    font-size: 16px !important;
+    /*font-size: 16px !important;*/
     font-weight: 500 !important;
     position: relative;
-    text-transform: uppercase !important;
+    /*text-transform: uppercase !important;*/
 }
 /*----------------------------------------*/
 /*  2.3 Mobile Menu
@@ -555,6 +556,9 @@ ul.header-r-cart li:hover .mini-cart-content {
     background: #ffffff none repeat scroll 0 0;
     color: #4e4f54;
     display: block;
+}
+.mainmenu ul#nav li ul.sub-menu li:hover {
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
 }
 .mean-container .mean-nav ul li a.mean-expand {background: none; top: -4px;}
 .mean-container .mean-nav ul li a.mean-expand:hover {background: none}

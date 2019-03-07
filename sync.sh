@@ -9,6 +9,10 @@ mv tour-Marrakech-Essaouira.html tour-Marrakech-Essaouira
 mv tour-Marrakech-Merzouga.html tour-Marrakech-Merzouga
 mv tour-Marrakech-Merzouga-3.html tour-Marrakech-Merzouga-3
 mv tour-Marrakech-Taroudante.html tour-Marrakech-Taroudante
+mv tour-1-day-Marrakech-Essaouira.html tour-1-day-Marrakech-Essaouira
+mv tour-1-day-Marrakech-Ouarzazate.html tour-1-day-Marrakech-Ouarzazate
+mv tour-1-day-Marrakech-Ourika-Valley.html tour-1-day-Marrakech-Ourika-Valley
+mv tour-1-day-Marrakech-Ouzoud-Waterfall.html tour-1-day-Marrakech-Ouzoud-Waterfall
 mv Grand-South-Tour.html Grand-South-Tour
 mv testimonials.html testimonials
 mv contact.html contact
@@ -33,6 +37,10 @@ mv tour-Marrakech-Essaouira tour-Marrakech-Essaouira.html
 mv tour-Marrakech-Merzouga tour-Marrakech-Merzouga.html
 mv tour-Marrakech-Merzouga-3 tour-Marrakech-Merzouga-3.html
 mv tour-Marrakech-Taroudante tour-Marrakech-Taroudante.html
+mv tour-1-day-Marrakech-Essaouira tour-1-day-Marrakech-Essaouira.html
+mv tour-1-day-Marrakech-Ouarzazate tour-1-day-Marrakech-Ouarzazate.html
+mv tour-1-day-Marrakech-Ourika-Valley tour-1-day-Marrakech-Ourika-Valley.html
+mv tour-1-day-Marrakech-Ouzoud-Waterfall tour-1-day-Marrakech-Ouzoud-Waterfall.html
 mv Grand-South-Tour Grand-South-Tour.html
 mv testimonials testimonials.html
 mv contact contact.html
