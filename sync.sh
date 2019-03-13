@@ -16,6 +16,7 @@ mv tour-1-day-Marrakech-Ouzoud-Waterfall.html tour-1-day-Marrakech-Ouzoud-Waterf
 mv Grand-South-Tour.html Grand-South-Tour
 mv testimonials.html testimonials
 mv contact.html contact
+mv tour-imperial-cities.html tour-imperial-cities
 s3cmd -c ~/.s3cfg-sait sync ./tour-* s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./Grand-South-Tour s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./testimonials s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
@@ -41,6 +42,7 @@ mv tour-1-day-Marrakech-Essaouira tour-1-day-Marrakech-Essaouira.html
 mv tour-1-day-Marrakech-Ouarzazate tour-1-day-Marrakech-Ouarzazate.html
 mv tour-1-day-Marrakech-Ourika-Valley tour-1-day-Marrakech-Ourika-Valley.html
 mv tour-1-day-Marrakech-Ouzoud-Waterfall tour-1-day-Marrakech-Ouzoud-Waterfall.html
+mv tour-imperial-cities tour-imperial-cities.html
 mv Grand-South-Tour Grand-South-Tour.html
 mv testimonials testimonials.html
 mv contact contact.html
