@@ -3821,3 +3821,7 @@ textarea.yourmessage {
     color: white!important;
     text-decoration: none!important;
 }
+
+.warning {
+  color: red;
+}
