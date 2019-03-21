@@ -22,14 +22,14 @@ mv tour-the-classical-Morocco.html tour-the-classical-Morocco
 mv desert-and-mountains.html desert-and-mountains
 mv day-excursions.html day-excursions
 mv tours-in-morocco.html tours-in-morocco
-s3cmd -c ~/.s3cfg-sait sync ./tour-* s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
+s3cmd -c ~/.s3cfg-sait sync ./tour* s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./Grand-South-Tour s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./testimonials s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./contact s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./desert-and-mountains s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./day-excursions s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.com/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
-s3cmd -c ~/.s3cfg-sait sync ./tour-* s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
+s3cmd -c ~/.s3cfg-sait sync ./tour* s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./Grand-South-Tour s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./testimonials s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./contact s3://www.saharawithlocals.co.uk/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
