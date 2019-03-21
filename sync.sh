@@ -21,6 +21,7 @@ mv tour-imperial-cities-and-the-desert.html tour-imperial-cities-and-the-desert
 mv tour-the-classical-Morocco.html tour-the-classical-Morocco
 mv desert-and-mountains.html desert-and-mountains
 mv day-excursions.html day-excursions
+mv tours-in-morocco.html tours-in-morocco
 s3cmd -c ~/.s3cfg-sait sync ./tour-* s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./Grand-South-Tour s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
 s3cmd -c ~/.s3cfg-sait sync ./testimonials s3://www.saharawithlocals.com/ --mime-type="text/html; charset=utf-8" --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
@@ -58,5 +59,6 @@ mv testimonials testimonials.html
 mv contact contact.html
 mv desert-and-mountains desert-and-mountains.html
 mv day-excursions day-excursions.html
+mv tours-in-morocco tours-in-morocco.html
 #s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.com/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding" --add-header "Content-Type: text/html"
 #s3cmd -c ~/.s3cfg-sait --exclude=".git/*" --exclude="*.DS_Store" sync ./ s3://www.saharawithlocals.co.uk/ --add-header "Cache-Control: no-cache, no-store" --acl-public --no-preserve --remove-header="Content-Encoding"
