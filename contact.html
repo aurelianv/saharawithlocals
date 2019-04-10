@@ -212,6 +212,50 @@
             </div>
         </div>
         <!--End of Trip Information-->
+
+        <!--Contact Form Start-->
+        <div class="contact-form">
+            <div class="contact-us-form-wrapper">
+                <div class="contact-container">
+                    <div class="contact-us-form section-padding">
+                        <div class="contact-row">
+                            <div class="contact-column">
+                                <div class="section-title text-center">
+                                    <div class="title-border">
+                                        <h1>Contact <span>US</span></h1>
+                                    </div>
+                                    <p>Fill in the form bellow with your request and we will reply in less than 12 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-column">
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input name="name" type="text" class="form-box" placeholder="Your name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="email" type="email" class="form-box" placeholder="Email">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="phone" type="text" class="form-box" placeholder="Phone number">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea name="message" class="yourmessage" placeholder="Your message"></textarea>
+                                            <p id="msgSuccess" style="color: green; font-size: 1.3em; display: none;">Your message has been sent! We will reply as soon as possible.</p>
+                                            <input type="submit" value="Send Message" class="submit-button">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Contact Form-->
+
       <!--Footer Widget Area Start-->
       <div class="footer-widget-area">
           <div class="container">
@@ -349,5 +393,22 @@
             })();
         </script>
         <!-- /WhatsHelp.io widget -->
+
+        <script language="javascript" type="text/javascript">
+            (function () {
+              $("#contactForm").submit(function(e) {
+               //prevent Default functionality
+               e.preventDefault();
+               console.log('form sending..');
+               $.post('https://86widis6a0.execute-api.eu-central-1.amazonaws.com/prod/subscribe', $( "#contactForm" ).serialize(), function(data){
+               // Append data into #results div
+                 //$('#results').html(data);
+                 console.log('done');
+                 $('#contactForm').trigger("reset");
+                 $('#msgSuccess').show();
+               });
+             });
+            })();
+        </script>
     </body>
 </html>

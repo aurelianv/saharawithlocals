@@ -3318,7 +3318,7 @@ span.reply i {margin-right: 3px}
     margin-top: 25px;
 }
 .contact-text > p {font-weight: 300; margin-bottom: 0;}
-.contact-form {position: relative; height: 737px; overflow: hidden}
+.contact-form {position: relative; height: 700px; overflow: hidden}
 .contact-form::before {
     background: #edecec none repeat scroll 0 0;
     content: "";
@@ -3333,11 +3333,11 @@ span.reply i {margin-right: 3px}
     background: #edecec none repeat scroll 0 0;
     content: "";
     height: 100%;
-    left: 89%;
+    left: 87%;
     position: absolute;
     top: 0;
     transform: skewX(-12deg);
-    width: 170px;
+    width: 164px;
     z-index: -1;
 }
 .contact-us-form.section-padding.thank-u {padding: 80px 0;}
@@ -3350,9 +3350,9 @@ span.reply i {margin-right: 3px}
 }
 .map {height: 737px; margin: 0 auto; width: 100%;}
 .contact-container {
-    width: 50%;
-    padding-right: 15px;
-    padding-left: 6.7%;
+  width: 50%;
+  margin-left: 25%;
+  background: #edecec;
 }
 .contact-us-form {position: relative; z-index: 9;}
 .contact-form .section-title {margin-bottom: 22px}
