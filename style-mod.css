@@ -597,7 +597,7 @@ ul.header-r-cart li:hover .mini-cart-content {
     text-align: center;
     top: 0;
 }
-.banner-content h1, .banner-content h2, .banner-content h3 {text-transform: uppercase}
+.banner-content h1, .banner-content h2, .banner-content h3 {text-transform: uppercase; color: white;}
 .banner-content h1 {
     animation: 1500ms ease-in-out 0s normal none 1 running bounceInLeft;
     font-size: 90px;
